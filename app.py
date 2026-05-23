@@ -61,7 +61,7 @@ try:
     OPENAQ_API_KEY = st.secrets["OPENAQ_API_KEY"]
 except (KeyError, FileNotFoundError):
     OPENAQ_API_KEY = ""
-st.warning(" ⚠️ OpenAQ API key not configured. Using sample data only.")
+    st.warning(" ⚠️ OpenAQ API key not configured. Using sample data only.")
 
 
 # ------------------------------------------------------------------------------
